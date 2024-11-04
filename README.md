@@ -1,2 +1,1 @@
-# zed-editor-config
-My config for Zed editor
+My config for editor Zed

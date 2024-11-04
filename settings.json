@@ -1,0 +1,139 @@
+// Zed config
+// by Bohdan Sokolovskyi (decmatrix)
+{
+  // theme settings
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "One Dark"
+  },
+
+  // extensions
+  "auto_install_extensions": {
+    "basher": true,
+    "clojure": true,
+    "deno": true,
+    "docker-compose": true,
+    "dockerfile": true,
+    "env": true,
+    "fish": true,
+    "gdscript": true,
+    "git-firefly": true,
+    "glsl": true,
+    "html": true,
+    "java": true,
+    "latex": true,
+    "log": true,
+    "lua": true,
+    "proto": true,
+    "sql": true,
+    "toml": true,
+    "vue": true,
+    "wgsl": true
+  },
+
+  // autosave
+  "autosave": "on_focus_change",
+
+  // auto update
+  "auto_update": true,
+
+  // base keymap
+  "base_keymap": "VSCode",
+
+  // font settings
+  "buffer_font_size": 18,
+  "buffer_font_weight": 600,
+  "buffer_font_family": "Iosevka Nerd Font Mono",
+
+  // confirm quit
+  "confirm_quit": true,
+
+  // tabs setting
+  "tabs": {
+    "close_position": "right",
+    "file_icons": true,
+    "git_status": true,
+    "activate_on_close": "history"
+  },
+
+  // file types
+  "file_types": {
+    "XML": ["rdf", "gpx", "kml"]
+  },
+
+  // lsp settings
+  "lsp": {
+    // Rust
+    "rust-analyzer": {
+      "initialization_options": {
+        "check": {
+          "command": "clippy"
+        },
+        "inlayHints": {
+          "maxLength": null,
+          "lifetimeElisionHints": {
+            "enable": "skip_trivial",
+            "useParameterNames": true
+          },
+          "closureReturnTypeHints": {
+            "enable": "always"
+          },
+          "rust": {
+            "analyzerTargetDir": true
+          }
+        }
+      }
+    },
+
+    // JavaScript
+    "deno": {
+      "settings": {
+        "deno": {
+          "enable": true
+        }
+      }
+    },
+
+    // Java
+    "jdtls": {
+      "initialization_options": {}
+    },
+
+    // Markdown
+    "Markdown": {
+      "format_on_save": "on"
+    },
+
+    // YAML
+    "yaml-language-server": {
+      "settings": {
+        "yaml": {
+          "keyOrdering": true,
+          "format": {
+            "singleQuote": true
+          },
+          "schemas": {
+            "http://json.schemastore.org/composer": ["/*"],
+            "../relative/path/schema.json": ["/config*.yaml"]
+          }
+        }
+      }
+    },
+
+    // TOML
+    "taplo": {
+      "settings": {
+        "array_auto_collapse": false
+      }
+    }
+  },
+
+  // always treat brackets as autoclosed
+  "always_treat_brackets_as_autoclosed": true,
+
+  // UI settings
+  "ui_font_size": 18,
+  "ui_font_weight": 1000,
+  "ui_font_family": "Iosevka Nerd Font Mono"
+}
