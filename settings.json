@@ -2,10 +2,18 @@
 // by Bohdan Sokolovskyi (decmatrix)
 {
   // theme settings
+  "assistant": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4o"
+    },
+    "version": "2"
+  },
+  "show_inline_completions": false,
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "One Dark"
+    "dark": "Catppuccin Macchiato"
   },
 
   // extensions
